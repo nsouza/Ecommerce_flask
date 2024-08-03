@@ -1,0 +1,24 @@
+
+#criar banco de dados
+from mercado import app
+from mercado import db
+app.app_context().push()
+from mercado.models import User, Item
+i2 = Item(nome="ventilador", preco=170, cod_barra="477354353", descricao="Objeto bom demais")
+db.session.add(xx)
+db.session.commit()
+
+#Ativar ambiente virtual
+source .venv/bin/activate
+
+#Rodar aplicação
+flask --app mercado run --debug
+
+#Biblioteca para instalação
+pip install flask_bcrypt
+pip install email_validator
+pip install Flask-SQLAlchemy
+pip install flask
+pip install wtforms
+pip install flask_wtf
+pip install flask_login
